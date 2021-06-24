@@ -1,0 +1,45 @@
+body{
+background-image: url(images/back-work3.png);
+
+background-repeat: round;
+
+width: auto;
+
+}
+#move{
+    width: fit-content;
+align-self: center;
+direction: ltr;
+
+
+}
+div.header{ 
+    width:2000;height:45px;background-image: url(images/cover.jpg);border: solid;border-color:aqua;
+}
+img {
+    height: 45px;width:150px;border: solid;border-color: aqua;
+}
+div.mid{
+
+    width:500px;height:600px;background-image: url(images/cover.jpg);align-self: center;border: solid;border-color: aqua;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;background-color: aliceblue ;width: max;
+}
+table{
+    width:400; height :300;
+}
+.disp_lab{
+   font-size: large;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
+   
+}
+.button{
+    widows: 50px;
+    text-align: center;
+    border:solid;
+    background-image: url(images/new_fk.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
