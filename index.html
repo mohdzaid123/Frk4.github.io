@@ -1,130 +1,27 @@
-<!DOCTYPE html><!--Its A Kind OF Website signup form-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>FRK-SIGNUP!!</title>
-<link rel="stylesheet" type="text/css" href="design.css"><!--FOR External linking of css file design.css-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Windows 11</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<script type="text/javascript">
-    
-    function checkName(){//Javascript Function for name pattern check
-
-        var nam = document.getElementById("first_id").value;//To gather Input Value Of name
-        var rel=/^[a-zA-Z\s'\-]{2,15}$/;
-         if (rel.test(nam)){
-            
-            document.getElementById("span_name").style.color="green";         
-            document.getElementById("span_name").innerHTML="<strong>correct</strong>";
-         }
-         else
-         {
-            document.getElementById("span_name").style.color="red"; 
-            document.getElementById("span_name").innerHTML="<strong>Enter min 2 characters</strong>";
-        }
-    
-    }
-    function checkAge(){//javascript function for age validation
-
-        var nam2 = document.getElementById("num_id").value;
-
-       if (nam2>18&&nam2<100){
-    
-        document.getElementById("span_age").style.color="green";         
-        document.getElementById("span_age").innerHTML="<strong>Valid</strong>";
- }
-       else
- {
-        document.getElementById("span_age").style.color="red"; 
-        document.getElementById("span_age").innerHTML="<strong>Enter Valid Age</strong>";
-}
-
-}
-
-    function checkPass(){//javascript function for password validation
-
-     var nam1 = document.getElementById("pass_id").value;
-     var rel1=/^[A-Za-z\d'\-]{8,10}$/i;
-     if (rel1.test(nam1)){
-    
-       document.getElementById("span_pass").style.color="green";         
-       document.getElementById("span_pass").innerHTML="<strong>Valid<strong>";
- }
-      else
- {
-       document.getElementById("span_pass").style.color="red"; 
-      document.getElementById("span_pass").innerHTML="<strong>Enter min 8 (includes-uppercase,lowercase,number not any symbol or space)</strong>";
-}
-
-}
-
- function summaryResult(){
-    var first = document.getElementById("first_id").value;
-      document.getElementById("summary").innerHTML= "Thanks For The Sign Up "  + first + " !!";
- }
-
-</script>
-
-
 <body>
-    <center>
-  <marquee id="move" behavior="moving"  > <h1>FRK IS HERE!!!</h1></marquee>
-</center>
-<div class="header" ><!--division for Header -->
-    <img  src="images/new_fk.jpg"/>
-</div>
-<br><br><br><br><br><br><br>
-<center>
-
-<div class="mid"   ><!--division for Main Form-->
-<br><br>
-   <h1   > Sign Up! </h1>
-  <br><br><br><br>
-   <table width="400"  height ="300">
-    <tr>
-        <td class="disp_lab">First-Name</td>
-        <td><input type="text" id="first_id" required onblur="checkName()"/></td>
-        <td><span id="span_name"></span></td>
-    </tr>
-    <tr>
-        <td class="disp_lab">Last-Name</td>
-        <td><input type="text" id =" last_id" required/></td>
-        <td></td>
-    </tr>
-    <tr>
-       <td class="disp_lab">Age</td>
-       <td><input type="number" id="num_id" required onblur="checkAge()"></td>
-       <td><span id="span_age"></span></td>
-    </tr>
-    <tr>
-        <td class="disp_lab">gender</td>
-        <td><input type="radio" id="gen_id" name="r1"checked>Male<input type="radio" name="r1">Female</td>
-        <td></td>
-        </tr>
-    <tr>
-       <td class="disp_lab">Email</td>
-       <td><input type="email" id="email_id" /></td>
-       <td></td>
-    </tr>
-    <tr>
-        <td class="disp_lab">Password</td>
-        <td><input type="password" required id="pass_id" onblur="checkPass()" /></td>
-        <td><span id="span_pass"></span></td>
-    </tr>
-    <tr>
-     <td class="disp_lab">Date</td>
-     <td><input type="date" id="date_id"/></td>
-     <td></td>
-    </tr>
- <tr>
-     <td></td><td class=button id="button"  ><span class="buttonsubmit" onclick="summaryResult();">SIGN UP</span></td>
- </tr>   
-</table>
-
-
-<h2 id="summary"></h2>
-
-</div>
-</center>   
-
-
+    <!-- <div class="icons">
+        <img src="chromeicon.png" width="74px" alt="">
+        <div>Google Chrome</div>
+    </div> -->
+    <div class="taskbar">
+        <img src="icons.PNG" alt="">
+        <img class="right" src="taskbarright.PNG" alt="">
+    </div>
+    <div class="startmenu">
+        <img src="startmenu.PNG" alt="">
+    </div>
+    <video autoplay muted id="vid">
+        <source src="video.webm" type="video/webm">
+    </video>
 </body>
+<script src="script.js"></script>
 </html>
